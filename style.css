@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0e8d9; /* Soft beige fallback to match image */
+    color: #000;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('imgs/mb.gif') no-repeat center center/cover;
+    opacity: 0.3; /* Low opacity for subtle vibe */
+    z-index: -1;
+  }
+  
+  .player-container {
+    width: 350px; /* Adjusted for popup */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .top-buttons button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .banner {
+    width: 150px; /* Scale to fit Vibes logo */
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .funny-gif {
+    width: 120px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  #song-input {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  #load-songs {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  #play-pause {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  /* Base range input reset for consistency */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 20px; /* Adjust for thumb size */
+    background: transparent;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  /* Seek and Volume Bar Styles */
+  .seek-bar, .volume-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    position: relative;
+    height: 40px; /* Space for heart thumb */
+  }
+  
+  #current-time, #duration {
+    font-size: 14px;
+    min-width: 40px;
+  }
+  
+  .speaker-low, .speaker-high {
+    font-size: 18px;
+    min-width: 20px;
+  }
+  
+  /* Track: Red heart tb.png as background */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px; /* Thin track */
+    background-image: url('imgs/tb.png'); /* Red heart shape for track */
+    background-size: contain; /* Or 'repeat-x' if you want tiling hearts */
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background-image: url('imgs/tb.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent; /* IE fallback, use linear-gradient if needed */
+    border-color: transparent;
+    color: transparent;
+    background-image: url('imgs/tb.png'); /* Limited support, but tries */
+  }
+  
+  /* Thumb: Black heart bh.png/svg as background */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px; /* Larger for heart shape */
+    width: 30px;
+    background-image: url('imgs/bh.png'); /* Black heart for thumb */
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: -11px; /* Center thumb vertically */
+    border: none;
+    border-radius: 50%; /* Fallback if image fails */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    height: 30px;
+    width: 30px;
+    background-image: url('imgs/bh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    margin: 0;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    height: 30px;
+    width: 30px;
+    background-image: url('imgs/bh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  /* Progress fill (optional: blue line like in your edit) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #4a90e2 var(--progress, 0%), transparent var(--progress, 0%)) no-repeat, url('imgs/tb.png'); /* Blue progress over red heart track */
+  }
+  
+  input[type="range"]::-moz-range-progress {
+    background: linear-gradient(to right, #4a90e2 var(--progress, 0%), transparent var(--progress, 0%)) no-repeat, url('imgs/tb.png');
+  }
+  
+  input[type="range"]::-ms-fill-lower {
+    background: linear-gradient(to right, #4a90e2 var(--progress, 0%), transparent var(--progress, 0%)) no-repeat, url('imgs/tb.png');
+  }
+  
+  .playing-text {
+    font-family: 'Permanent Marker', cursive; /* Handwritten font */
+    font-size: 20px;
+    color: #ff69b4; /* Pink to match vibe */
+    margin-top: 20px;
+  }
+  
+  .song-list-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .song-list-modal li {
+    list-style: none;
+    cursor: pointer;
+    margin: 5px 0;
+  }

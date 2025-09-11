@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funny GIF Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> <!-- For handwritten font -->
+</head>
+<body>
+  <!-- Background GIF with low opacity -->
+  <div class="background"></div>
+
+  <div class="player-container">
+    <!-- Top buttons -->
+    <div class="top-buttons">
+      <button id="show-song-list">Show Song List</button>
+      <button id="close-app">Close App</button>
+    </div>
+
+    <!-- Banner (Vibes) -->
+    <img src="imgs/b.gif" alt="Vibes Banner" class="banner">
+
+    <!-- Funny GIF (bear or similar) -->
+    <img id="funny-gif" src="imgs/1.gif" alt="Funny GIF" class="funny-gif">
+
+    <!-- Song selection -->
+    <input type="file" id="song-input" accept="audio/*" multiple>
+    <button id="load-songs">Load Songs</button>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play-pause">▶</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <!-- Seek bar (hearts) -->
+    <div class="seek-bar">
+      <span id="current-time">00:00</span>
+      <div id="seek-hearts" class="hearts">
+        <!-- JS will populate 7 hearts: ♡ ♡ ♡ ♡ ♡ ♡ ♡ -->
+      </div>
+      <span id="duration">00:00</span>
+      <input type="range" id="seek" min="0" max="100" value="0" class="hidden-range">
+    </div>
+
+    <!-- Volume bar (speakers + hearts) -->
+    <div class="volume-bar">
+      <span class="speaker-low">🔈</span>
+      <div id="volume-hearts" class="hearts">
+        <!-- JS will populate 5 hearts: ♡ ♡ ♡ ♡ ♡ -->
+      </div>
+      <span class="speaker-high">🔊</span>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" class="hidden-range">
+    </div>
+
+    <!-- Playing status -->
+    <div id="playing-status" class="playing-text">PLAYING <span id="current-index">x</span> OF <span id="total-songs">y</span></div>
+
+    <!-- Song list (hidden modal) -->
+    <div id="song-list" class="song-list-modal">
+      <!-- Dynamically populated -->
+    </div>
+
+    <!-- Audio element (hidden) -->
+    <audio id="audio-player"></audio>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
