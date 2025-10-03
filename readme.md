@@ -1,6 +1,6 @@
 # 🎵 Gifly — Music Player with GIF Dock
 
-![Gifly Logo](icon/gifly.ico)
+![Gifly Logo](../gifly.ico)
 
 **Gifly** is a lightweight, modern music player built with **Python (PyQt5)**.  
 It combines smooth audio playback with a floating, resizable **GIF dock** that stays on top of all windows — making your music listening experience more fun and interactive.  
@@ -55,3 +55,4 @@ Clone the repository:
 ```bash
 git clone https://github.com/Priyanshurajpoot/Gifly.git
 cd Gifly
+
