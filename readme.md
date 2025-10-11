@@ -12,13 +12,13 @@ It combines smooth audio playback with a floating, resizable **GIF dock** that s
 - 🎶 **Music Playback**
   - Supports multiple audio formats: MP3, WAV, OGG, FLAC, AAC, WMA, M4A
   - Shuffle / Repeat (One / All / None) modes
-  - Save & restore last playlist, position, and volume  
+  - Volume controls 
 
 - 📂 **Library Management**
   - Add multiple songs at once
-  - Search and filter songs
+  - Search songs
   - Remove single or all songs
-  - Persistent playlists (auto-saved)
+    
 
 - 🖼 **GIF Dock**
   - Floating, always-on-top transparent dock
@@ -55,5 +55,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/Priyanshurajpoot/Gifly.git
 cd Gifly
+
 
 
