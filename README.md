@@ -12,7 +12,7 @@ It combines smooth audio playback with a floating, resizable **GIF dock** that s
 **Priyanshu Rajpoot**  
 *MCA Post Graduate | Python Developer | Prompt Engineer | AI Enthusiast*
 
-- 🔗 **LinkedIn**: [priyanshux5](www.linkedin.com/in/priyanshu-rajpoot-199503256)
+- 🔗 **LinkedIn**: [priyanshurajpoot](https://linkedin.com/in/priyanshu-rajpoot-199503256)
 - 💻 **GitHub**: [Priyanshurajpoot](https://github.com/Priyanshurajpoot)
 - 📧 **Email**: priyanshux5xraj@gmail.com
 
@@ -337,7 +337,7 @@ SOFTWARE.
 - **🚀 Downloads**: [GitHub Releases](https://github.com/Priyanshurajpoot/Gifly/releases)
 - **💬 Discussions**: [GitHub Discussions](https://github.com/Priyanshurajpoot/Gifly/discussions)
 - **📧 Email**: priyanshux5xraj@gmail.com
-- **👨‍💻 Developer**: [Priyanshu Rajpoot](www.linkedin.com/in/priyanshu-rajpoot-199503256)
+- **👨‍💻 Developer**: [Priyanshu Rajpoot](https://linkedin.com/in/priyanshu-rajpoot-199503256)
 
 ---
 
@@ -360,7 +360,7 @@ Special thanks to:
 - **📂 Repository**: [Gifly on GitHub](https://github.com/Priyanshurajpoot/Gifly.git)
 - **🚀 Releases**: [Latest Releases](https://github.com/Priyanshurajpoot/Gifly/releases)
 - **🐛 Issues**: [Report Issues](https://github.com/Priyanshurajpoot/Gifly/issues)
-- **👨‍💻 Developer**: [Priyanshu Rajpoot](www.linkedin.com/in/priyanshu-rajpoot-199503256)
+- **👨‍💻 Developer**: [Priyanshu Rajpoot](https://linkedin.com/in/priyanshu-rajpoot-199503256)
 
 ---
 *AUTHOR*  
@@ -369,3 +369,4 @@ Special thanks to:
 *Building creative solutions that blend multimedia and user experience*
 
 --- 
+
